@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewpoint' content = 'width=device-width, initial-scale=1.0'/>
+    <title>Sarina Xi</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="main_container" id='home'>
+      <div class='navbar'>
+        <div class="logo">
+          <a href="#"></a>
+        </div>
+        <div class="navbar_items">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#photo">Photography</a></li>
+            <li><a href="#films">Film</a></li>
+            <li><a href="#music">Music</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="banner_image">
+        <div class="banner_content">
+          <h1>Sarina Xi <h1/>
+            <p>Student | Engineer | Researcher</p>
+            <p>Photographer | Videographer | Musician</p>
+          </h1>
+        </div>
+        </div>
+
+        <div class="about" id='about'>
+          <div class="text">
+          <h1 class='title'>About</h1>
+          <p id = 'line'>-----------------</p>
+          <p>I'm a second year student @UofT studying Engineering Science.</p>
+          <p>I'm curious in almosty everything and am always open for challenges.</p>
+          <p>Currently, 1) I am doing research with Professor Amar Vutha in AMO physics.</p>
+          <p>2) I am designing a three wheeler car for Blue Sky Solar Racing.</p>
+          <p>3) I am overseeing marketing decisinos for the Ontario Engineering Competition 2022</p>
+          <p>In my spare time, I take photos, produce films, and make music.</p>
+          </div>
+          <img src="photos/me4.jpg" alt="">
+        </div>
+        </div>
+
+        <div class="project" id='projects'>
+          <h1 class='title'>Projects</h1>
+          <a class='text'>(Click on image to see detailed project)</a>
+          <div class="diff_project">
+            <div class="diff_project_item">
+            <a href="files/Engineering Case Competition.pdf"><img src="photos/plastic.JPG" alt="project_image"></a>
+              <h3> Enzymatic Plastic Degradation</h3>
+              <p>A 24 hour designathon that won 2nd place in the 2020 WISE Engineering Case Competition in a team of four</p>
+            </div>
+            <div class="diff_project_item">
+              <a href="files/2020UnBDC_Project_Manuscript.pdf"><img src="photos/bdc.JPG" alt="project_image"></a>
+              <h3>Correlation Between Eating Disorder and Social Media Use</h3>
+              <p> An attempt in big date that got Top 15 in 2020 Undergraduate Big Data Challenge in a team of four</p>
+            </div>
+            <div class="diff_project_item">
+              <a href="https://github.com/xasayi/Three-Body-Solver"><img src="photos/3body.JPG" alt="project_image"></a>
+              <h3>Three Body Simulation</h3>
+              <p>A 24 hour physics hackathon to learn more about 3 body motion at the 2020 McGill Physics Competition in a team of four</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="research" id='research'>
+        <h1 class='title'>research</h1>
+        <a class='text'>(Click on project title to see project overview)</a>
+        <div class="diff_project">
+          <div class="diff_project_item">
+            <h3 class="researchname" onclick = "re1()" > Designing an Optimal Optical Lens System</h3>
+          </div>
+          <div class="diff_project_item">
+            <h3 class="researchname" onclick = "re2()" > Creating a Laser Frequency Mode Map</h3>
+          </div>
+          <div class="diff_project_item">
+            <h3 class="researchname" onclick = "re3()" > Testing COVID-19 Diagnostic Strips </h3>
+          </div>
+        </div>
+      <!-- research 1 -->
+      <div id="research1">
+        <div class="res1">
+        <div class="image1">
+          <img class = "cad" src="photos/cad.jpg" alt="research_image">
+          <img class = "rays" src="photos/rays.jpg" alt="research_image">
+        </div>
+          <p> The samarium experiment searches for a theoretical narrow spectroscopic feature in a crystal that is lower-doped with
+            samarium ions. However, as the desired transition includes a forbidden transition, it can only be achieved by induced
+            magnetic state mixing. The nature of the transition results in a weak transition, thus a weak signal observed from the
+            spontaneous emission of photons as the electrons return to their final ground state in a 3-level system. Therefore, during
+            the summer of 2020 while I was working in AMO physics at Vuthalabs, I performed a number of simulations in Zemax Optical
+            Studio to determine an optimal lens configuration
+            to increase the number of photons that can hit the vacuum chamber window after shining a laser on the samarium crystal.
+            Analysis was performed on how lens addition and combinations can increase the photomultiplier cube collector efficiency
+            compared to the original setup. CADing was also done to make key components of the collection lens system to fit it on
+            the vacuum cryostat. At the end, a theoretical efficiency of 8x greater than the original efficiency is achieved. The
+            images on the left show the lens system with the vacuum cryostat and the Zemax simulations of light rays.</p>
+      </div>
+    </div>
+      <!-- research 2 -->
+      <div id="research2" >
+        <div class="res2">
+        <img src="photos/laser.jpg" alt="research_image">
+        <p> Oftentime, it is hard to maintain the stability of a laser lasing at a specific frequency during an experiment when the laser temperature and current changes.
+          To find a stable region where the laser frequency will not fluctuate and suddenly experience mode hops from the desired
+          frequency, I created a laser mode geography map during the 2020-2021
+          school year while working at Vuthalabs. This would allow a relatively time efficiency way of scanning over a range of
+          temperature and current to map out the changes in laser frequency. Furthermore, an automated program is created with
+          respondents to the map to automatically tell one the regions of interest. For example, the image on the right shows
+          regions where the frequency is within 5Hz of the desired frequency.  </p>
+      </div>
+    </div>
+      <!-- research 3 -->
+      <div id="research3">
+      <div class="res3">
+        <img src="photos/progress.png" alt="research_image">
+        <p> The current COVID-19 pandemic has highlighted the urgent need for rapid high-sensitivity diagnostic testing for large-scale
+          population screening. For summer 2021, I will be working with Prof. Liu’s microfluidics and BioMEMS lab at the University of
+          Toronto to manufacture and test such lateral flow test strips. I will be developing the manufacturing facility for lab fabrication
+          of flow test strips and manufacturing as well as calibrating the lateral flow test strips for detection of N proteins in SARS-CoV-2
+          in spiked saliva samples.</p>
+      </div>
+    </div>
+
+  </div>
+
+    <div class="photo" id='photo'>
+      <h1 class='title'>Photography</h1>
+      <a class='text'>(Click on project name to scroll through pictures)</a>
+
+        <div class="diff_photos">
+          <div class="diff_project_item">
+            <h3 class="photoname" onclick = "clickVis1()" > Downtown Toronto </h3>
+          </div>
+          <div class="diff_project_item">
+            <h3 class="photoname" onclick = "clickVis2()"> From PHX to LA </h3>
+          </div>
+          <div class="diff_project_item">
+            <h3 class="photoname" onclick = "clickVis3()"> Huntsman Marine </h3>
+          </div>
+        </div>
+  <!-- second album -->
+    <div id="photo2">
+
+      <div class="mySlides2">
+        <div class="numbertext">1 / 10</div>
+        <img src="photos/trip1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">2 / 10</div>
+        <img src="photos/trip2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">3 / 10</div>
+        <img src="photos/trip3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">4 / 10</div>
+        <img src="photos/trip4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">5 / 10</div>
+        <img src="photos/trip11.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">6 / 10</div>
+        <img src="photos/trip6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">7 / 10</div>
+        <img src="photos/trip7.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">8 / 10</div>
+        <img src="photos/trip10.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">9 / 10</div>
+        <img src="photos/trip8.jpg" style="width:100%">
+      </div>
+      <div class="mySlides2">
+        <div class="numbertext">10 / 10</div>
+        <img src="photos/trip9.jpg" style="width:100%">
+      </div>
+      <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip1.jpg" style="width:100%" onclick="currentSlide2(1)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip2.jpg" style="width:100%" onclick="currentSlide2(2)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip3.jpg" style="width:100%" onclick="currentSlide2(3)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip4.jpg" style="width:100%" onclick="currentSlide2(4)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip11.jpg" style="width:100%" onclick="currentSlide2(5)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip6.jpg" style="width:100%" onclick="currentSlide2(6)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip7.jpg" style="width:100%" onclick="currentSlide2(7)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip10.jpg" style="width:100%" onclick="currentSlide2(8)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip8.jpg" style="width:100%" onclick="currentSlide2(9)">
+        </div>
+        <div class="column2">
+          <img class="demo cursor" src="photos/trip9.jpg" style="width:100%" onclick="currentSlide2(10)">
+        </div>
+      </div>
+    </div>
+    <!-- first album -->
+    <div id="photo1">
+      <div class="mySlides1">
+        <div class="numbertext">1 / 10</div>
+          <img src="photos/toronto1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">2 / 10</div>
+        <img src="photos/toronto2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">3 / 10</div>
+          <img src="photos/toronto3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">4 / 10</div>
+          <img src="photos/toronto4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">5 / 10</div>
+          <img src="photos/toronto5.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">6 / 10</div>
+          <img src="photos/toronto6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">7 / 10</div>
+        <img src="photos/toronto7.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">8 / 10</div>
+          <img src="photos/toronto8.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">9 / 10</div>
+          <img src="photos/toronto9.jpg" style="width:100%">
+      </div>
+      <div class="mySlides1">
+        <div class="numbertext">10 / 10</div>
+          <img src="photos/toronto10.jpg" style="width:100%">
+      </div>
+      <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+      <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+      <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto1.jpg" style="width:100%" onclick="currentSlide1(1)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto2.jpg" style="width:100%" onclick="currentSlide1(2)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto3.jpg" style="width:100%" onclick="currentSlide1(3)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto4.jpg" style="width:100%" onclick="currentSlide1(4)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto5.jpg" style="width:100%" onclick="currentSlide1(5)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto6.jpg" style="width:100%" onclick="currentSlide1(6)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto7.jpg" style="width:100%" onclick="currentSlide1(7)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto8.jpg" style="width:100%" onclick="currentSlide1(8)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto9.jpg" style="width:100%" onclick="currentSlide1(9)">
+      </div>
+      <div class="column1">
+        <img class="demo cursor" src="photos/toronto10.jpg" style="width:100%" onclick="currentSlide1(10)">
+      </div>
+    </div>
+    </div>
+    <!-- third album -->
+    <div id="photo3">
+      <div class="mySlides3">
+        <div class="numbertext">1 / 10</div>
+        <img src="photos/huntsman1.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">2 / 10</div>
+        <img src="photos/huntsman2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">3 / 10</div>
+        <img src="photos/huntsman7.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">4 / 10</div>
+        <img src="photos/huntsman4.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">5 / 10</div>
+        <img src="photos/huntsman5.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">6 / 10</div>
+        <img src="photos/huntsman6.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">7 / 10</div>
+        <img src="photos/huntsman3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">8 / 10</div>
+        <img src="photos/huntsman8.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">9 / 10</div>
+        <img src="photos/huntsman9.jpg" style="width:100%">
+      </div>
+      <div class="mySlides3">
+        <div class="numbertext">10 / 10</div>
+        <img src="photos/huntsman10.jpg" style="width:100%">
+      </div>
+      <a class="prev3" onclick="plusSlides3(-1)">&#10094;</a>
+      <a class="next3" onclick="plusSlides3(1)">&#10095;</a>
+      <!-- Thumbnail images -->
+      <div class="row">
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman1.jpg" style="width:100%" onclick="currentSlide3(1)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman2.jpg" style="width:100%" onclick="currentSlide3(2)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman7.jpg" style="width:100%" onclick="currentSlide3(3)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman4.jpg" style="width:100%" onclick="currentSlide3(4)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman5.jpg" style="width:100%" onclick="currentSlide3(5)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman6.jpg" style="width:100%" onclick="currentSlide3(6)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman3.jpg" style="width:100%" onclick="currentSlide3(7)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman8.jpg" style="width:100%" onclick="currentSlide3(8)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman9.jpg" style="width:100%" onclick="currentSlide3(9)">
+        </div>
+        <div class="column3">
+          <img class="demo cursor" src="photos/huntsman10.jpg" style="width:100%" onclick="currentSlide3(10)">
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="films" id='films'>
+      <h1 class='title'>Film</h1>
+      <a class='text'>(Click on image to watch short films)</a>
+      <div class="diff_films">
+        <div class="diff_films_item">
+          <a href="https://youtu.be/RR6tVlG7LG0"><img src="photos/tea.JPG" alt="project_image"></a>
+          <h3> Late Night Tea </h3>
+          <p>An Aronofsky styled short film.</p>
+        </div>
+        <div class="diff_films_item">
+          <a href="https://youtu.be/gpzIFCGHcnw"><img src="photos/relation.JPG" alt="project_image"></a>
+          <h3>A Relationship</h3>
+          <p>When the roles switch.</p>
+        </div>
+        <div class="diff_films_item">
+            <a href="https://youtu.be/axdpfVswwAA"><img src="photos/box.JPG" alt="project_image"></a>
+          <h3>The Box</h3>
+          <p>Greed consumes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="music" id='music'>
+      <h1 class='title'>Music</h1>
+      <a class='text'>(Click on image to listen to music)</a>
+      <div class="diff_films">
+        <div class="diff_films_item">
+          <a href="https://youtu.be/HE4zry0rXSQ"><img src="photos/no.JPG" alt="project_image"></a>
+          <h3> 你还没有 (You haven't yet)</h3>
+          <p>A song for a close friend of mine.</p>
+        </div>
+        <div class="diff_films_item">
+          <a href="https://youtu.be/np_UJ79pdeU"><img src="photos/cicada.JPG" alt="project_image"></a>
+          <h3>蝉鸣 (The sound of cicadas)</h3>
+          <p> When summer comes but you are alone in an unfamilar place.</p>
+        </div>
+        <div class="diff_films_item">
+            <a href="https://youtu.be/ua3XLBduzB8"><img src="photos/piano.JPG" alt="project_image"></a>
+          <h3>Impromptu in C minor: Lost in Thoughts</h3>
+          <p>A piece composed for the Do Mi Si La Do Re Project. </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="footer">
+        <a href="#">@2021SarinaXi</a>
+      </div>
+
+      <div class="arrow">
+        <a href="#home"><img src='photos/arrow.png' alt"up_arrow"></a>
+      </div>
+    </div>
+  </body>
+
+<script>
+function re1() {
+  var x1 = document.getElementById("research1");
+  var x2 = document.getElementById("research2");
+  var x3 = document.getElementById("research3");
+  x1.style.display = "block";
+  x2.style.display = "none";
+  x3.style.display = "none";
+}
+function re2() {
+  var x1 = document.getElementById("research1");
+  var x2 = document.getElementById("research2");
+  var x3 = document.getElementById("research3");
+  x1.style.display = "none";
+  x2.style.display = "block";
+  x3.style.display = "none";
+}
+function re3() {
+  var x1 = document.getElementById("research1");
+  var x2 = document.getElementById("research2");
+  var x3 = document.getElementById("research3");
+  x1.style.display = "none";
+  x2.style.display = "none";
+  x3.style.display = "block";
+}
+function clickVis1() {
+  var x1 = document.getElementById("photo1");
+  var x2 = document.getElementById("photo2");
+  var x3 = document.getElementById("photo3");
+  x1.style.display = "block";
+  x2.style.display = "none";
+  x3.style.display = "none";
+}
+function clickVis2() {
+  var x1 = document.getElementById("photo1");
+  var x2 = document.getElementById("photo2");
+  var x3 = document.getElementById("photo3");
+  x1.style.display = "none";
+  x2.style.display = "block";
+  x3.style.display = "none";
+}
+function clickVis3() {
+  var x1 = document.getElementById("photo1");
+  var x2 = document.getElementById("photo2");
+  var x3 = document.getElementById("photo3");
+  x1.style.display = "none";
+  x2.style.display = "none";
+  x3.style.display = "block";
+}
+var slideIndex = 1;
+showSlides1(slideIndex);
+showSlides2(slideIndex);
+showSlides3(slideIndex);
+var x1 = document.getElementById("photo1");
+var x2 = document.getElementById("photo2");
+var x3 = document.getElementById("photo3");
+x1.style.display = "block";
+x2.style.display = "none";
+x3.style.display = "none";
+var r1 = document.getElementById("research1");
+var r2 = document.getElementById("research2");
+var r3 = document.getElementById("research3");
+r1.style.display = "block";
+r2.style.display = "none";
+r3.style.display = "none";
+//first
+// Next/previous controls
+function plusSlides1(n) {
+  showSlides1(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide1(n) {
+  showSlides1(slideIndex = n);
+}
+function showSlides1(n) {
+  var i;
+  var slides1 = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides1.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides1.length}
+  for (i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides1[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+//second
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides2.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides2[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+//third
+// Next/previous controls
+function plusSlides3(n) {
+  showSlides3(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide3(n) {
+  showSlides3(slideIndex = n);
+}
+function showSlides3(n) {
+  var i;
+  var slides3 = document.getElementsByClassName("mySlides3");
+  var dots = document.getElementsByClassName("demo");
+  if (n > slides3.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides3.length}
+  for (i = 0; i < slides3.length; i++) {
+    slides3[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides3[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
