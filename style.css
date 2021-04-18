@@ -129,11 +129,10 @@ h1.title{
 #line{
   color: #77a3a3;
 }
-.about a:link {
-  color: #989898;
+.about a {
+  color: #707070;
 }
 
-/* visited link */
 .about a:hover {
   color: #a9a9a9;
 }
