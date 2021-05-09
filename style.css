@@ -171,37 +171,6 @@ h1.title{
   padding:4%;
 }
 
-/* Our team */
-.research{
-  background:#fff;
-}
-
-.ourteam_wrapper .team{
-  display: flex;
-}
-
-.ourteam_wrapper .team_1.team{
-  margin-bottom: 25px;
-}
-
-.ourteam_wrapper .team_member{
-  width: 30%;
-  height: auto;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.ourteam_wrapper .team_member img{
-  width: 100%;
-  display: block;
-  height: auto;
-  transition: all 0.5s ease;
-}
-
-.ourteam_wrapper .team_member:hover img{
-  transform: scale(1.1);
-}
-
 /* Research */
 .research{
   background-color: #fff;
@@ -410,7 +379,6 @@ h1.title{
   opacity: 0.6;/* Add a transparency effect for thumnbail images */
 }
 
-.active,
 .demo:hover {
   opacity: 1;
 }
