@@ -1,0 +1,471 @@
+@import url('http://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+p{
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  color: #a9a9a9;
+}
+
+h1.title{
+  margin-bottom: 20px;
+  color: #444444;
+  font-family: 'Josefin Sans';
+  text-transform: uppercase;
+  word-spacing: 25px;
+  letter-spacing: 5px;
+}
+.btn a{
+  display: block;
+  width:180px;
+  height:35px;
+  border: 2px soild #77a3a3;
+  line-height: 35px;
+  margin: 0 auto 0;
+  color: #77a3a3;
+  text-align:center;
+}
+
+.main_container{
+  position: relative;
+}
+/* Navigation bar */
+.navbar{
+  width: 100%;
+  height: 65px;
+  display: flex;
+  margin-right:0;
+  align-items: center;
+  position: absolute;
+}
+.navbar a{
+  color: black;
+}
+
+.navbar,
+.navbar_items ul{
+  display: flex;
+}
+.navbar_items{
+  margin-right: 0;
+}
+
+.navbar,
+.navbar_items ul li{
+  text-transform: uppercase;
+  margin:0 20px;
+  color:black;
+}
+
+/* Banner Image */
+.banner_image{
+  background: url('photos/me.jpg') no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.banner_content{
+  text-align: center;
+  color: #000;
+  margin-bottom:100px;
+}
+
+.banner_content h1{
+  text-transform : uppercase;
+  font-size: 60px;
+  line-height:38px;
+  margin-bottom: 20px;
+}
+.banner_content h1 p{
+  color: #77a3a3;
+  font-size: 20px;
+}
+
+/* About Me */
+.about,
+.photo,
+.project,
+.contactus,
+.research,
+.films,
+.music{
+  padding: 5% 0;
+  text-align:center;
+  word-spacing:0px;
+}
+.about{
+  display: flex;
+  justify-content: center;
+}
+.about p{
+  text-align:center;
+  line-height:40px;
+  padding: 0 20px;
+}
+
+.about img{
+  width: 375px;
+  height: 500px;
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.about img:hover{
+  transform: scale(1.05);
+}
+#line{
+  color: #77a3a3;
+}
+.about a {
+  color: #707070;
+}
+
+.about a:hover {
+  color: #a9a9a9;
+}
+
+/* project */
+.project{
+  background:#f5f5f5;
+}
+
+.diff_project{
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+.diff_project_item{
+  width:30%;
+}
+
+.diff_project_item img{
+  width: 100%;
+  padding: 10%;
+  position: center;
+  display:inline-grid;
+  transition: all 0.5s ease;
+}
+
+.diff_project_item img:hover{
+  transform: scale(1.05);
+}
+.diff_project_item h3{
+  color: #77a3a3;
+  margin-bottom: 15px;
+}
+.diff_project_item p{
+  padding:4%;
+}
+
+/* Research */
+.research{
+  background-color: #fff;
+}
+.researchname {
+  padding-left:5%;
+  padding-right:5%;
+}
+.researchname:hover {
+  color: rgba(10,80,80,0.6);
+}
+.research p{
+  line-height: 2;
+  text-align: justify;
+  text-indent: 50px;
+}
+.res1 {
+  display: flex;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:1%;
+}
+.res1 img {
+  padding-right:10%;
+}
+.cad{
+  width:350px;
+  height:350px;
+}
+.rays {
+  width:350px;
+  height:150px;
+}
+.research1 {
+  display: none;
+}
+.research2 {
+  display: none;
+}
+.research3 {
+  display: none;
+}
+
+.res2 {
+  display: flex;
+  padding-left:5%;
+  padding-right:5%;
+}
+.res2 p {
+  padding-top: 2%;
+  padding-right: 5%;
+}
+.res2 img {
+  height: 400px;
+  width: 550px;
+  padding-right:1%;
+}
+.res3 {
+  display: flex;
+  padding-left:5%;
+  padding-right:5%;
+}
+.res3 p {
+  padding-right:5%;
+}
+.res3 img {
+  height: 200px;
+  width: 400px;
+  padding-right:5%;
+}
+/* Photography */
+.photo{
+  background-color: #f4f4f4;
+  position: relative;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.diff_photos{
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+
+.photo2 {
+  display:none;
+  transition: all 0.5s ease;
+}
+.photo3 {
+  display:none;
+  transition: all 0.5s ease;
+}
+
+.column1 img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.column2 img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+.column3 img:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+}
+
+.mySlides1 {
+  display: none; /*hide image by default*/
+  height: 570px;
+  transition: all 0.5s ease;
+}
+.mySlides2 {
+  display: none; /*hide image by default*/
+  height: 570px;
+  transition: all 0.5s ease;
+}
+.mySlides3 {
+  display: none; /*hide image by default*/
+  height: 570px;
+  transition: all 0.5s ease;
+}
+
+.cursor {
+  cursor: pointer;/* Add a pointer when hovering over the thumbnail images */
+}
+.prev1,
+.next1,
+.prev2,
+.next2,
+.prev3,
+.next3,
+.prev4 {
+  cursor: pointer;
+  position:absolute;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+
+.next1,
+.next2,
+.next3 {
+  right: 15%;
+}
+.prev1,
+.prev2,
+.prev3 {
+  left:15%;
+}
+.next1,
+.prev1 {
+  top:59%;
+}
+.next2,
+.prev2 {
+  top:59%;
+}
+.next3,
+.prev3 {
+  top:59%;
+}
+.prev1:hover,
+.next1:hover,
+.prev2:hover,
+.next2:hover,
+.prev3:hover,
+.next3:hover {
+  background-color: rgba(0, 0, 0, 0.8);/* On hover, add a black background color with a little bit see-through */
+}
+
+.photoname:hover {
+  color: rgba(10,80,80,0.6);
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column1 {
+  float: left;
+  width: 10%;
+}
+.column2 {
+  float: left;
+  width: 10%;
+}
+.column3 {
+  float: left;
+  width: 10%;
+}
+
+.demo {
+  opacity: 0.6;/* Add a transparency effect for thumnbail images */
+}
+
+.demo:hover {
+  opacity: 1;
+}
+
+/* Video */
+.films{
+  background-color: #fff;
+}
+.diff_films{
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+}
+.diff_films_item{
+  width:30%;
+}
+.diff_films_item img{
+  width: 100%;
+  padding: 10%;
+  position: center;
+  display:inline-grid;
+  transition: all 0.5s ease;
+}
+.diff_films_item img:hover{
+  transform: scale(1.05);
+}
+.diff_films_item h3{
+  color: #77a3a3;
+  margin-bottom: 15px;
+}
+.diff_films_item p{
+  padding:4%;
+}
+/* Music */
+.music{
+  background-color:#f4f4f4;
+}
+
+/* Footer */
+.footer{
+  width: 100%;
+  text-align: center;
+  background: #444444;
+  padding: 20px 0;
+}
+
+.footer a{
+  color: #fff;
+}
+
+@media (max-width: 720px){
+  .navbar{
+    height: auto;
+    flex-direction: column;
+  }
+  .navbar ul{
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo{
+    margin-bottom: 25px;
+  }
+  .navbar ul li{
+    margin-bottom: 5px;
+    scroll-behavior: smooth;
+  }
+  .banner_content{
+    margin-top: 35px;
+  }
+}
+
+/* Arrow */
+.arrow{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 40px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+  background: #77a3a3;
+  border-radius: 50%;
+}
+
+.arrow img{
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
