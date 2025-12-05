@@ -152,47 +152,23 @@ span.highlight {
   display: flex;
 }
 
-/* For water sports */
-/* Container for the masonry layout */
-.masonry {
-  column-count: 3;
-  column-gap: 16px;
-  max-width: 900px;
-  margin: 20px auto;
-}
 
-/* Each card inside the masonry */
-.masonry-item {
+/* Back link */
+.back-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #1772d0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 20px;
   display: inline-block;
-  width: 100%;
-  margin-bottom: 16px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  overflow: hidden;
-  break-inside: avoid;
 }
 
-.masonry-item img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  border-radius: 8px 8px 0 0;
+.back-link:hover {
+  color: #f09228;
 }
 
-.masonry-item h2 {
-  margin: 8px;
-  font-size: 14px;
-  color: #333;
-}
-
-@media (max-width: 900px) {
-  .masonry {
-    column-count: 2;
-  }
-}
-
-@media (max-width: 600px) {
-  .masonry {
-    column-count: 1;
-  }
+h1 {
+  text-align: center;
+  margin-top: 20px;
 }
