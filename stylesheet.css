@@ -2,29 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Base typography */
-/* Base typography */
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
   margin: 0;
-  padding: 20px;       /* ← NEW: global page padding like sports page */
-}
-
-/* Main content wrapper (matches paddling page spacing) */
-.main-container {
-  max-width: 800px;
-  margin: auto;
-  padding: 20px;       /* ← NEW: internal padding */
-}
-
-/* Reduce padding on small screens */
-@media (max-width: 600px) {
-  body {
-    padding: 12px;     /* ← narrower body padding for mobile */
-  }
-  .main-container {
-    padding: 12px;     /* ← match the body on mobile */
-  }
 }
 
 a {
