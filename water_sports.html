@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sarina Xi - Paddling & Rowing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    /* Container for the masonry layout */
+    .masonry {
+      column-count: 3;
+      column-gap: 16px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+
+    /* Each card inside the masonry */
+    .masonry-item {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 16px;
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      break-inside: avoid;
+    }
+
+    .masonry-item img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .masonry-item h2 {
+      margin: 8px;
+      font-size: 14px;
+      color: #333;
+    }
+
+    @media (max-width: 900px) {
+      .masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .masonry {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div style="max-width:900px; margin:auto; padding:20px;">
+    <p style="text-align:left; margin-bottom: 20px;">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+    </p>
+
+    <h1>Paddling & Rowing</h1>
+
+    <div class="masonry">
+      <div class="masonry-item">
+        <img src="sports/occoquan2025.jpg" alt="">
+        <h2>Racing as a part of the CMU rowing team at the 2025 Head of the Occoquan.</h2>
+      </div>
+      
+      
+      <div class="masonry-item">
+        <img src="sports/worlds_2024.jpg" alt="">
+        <h2>On the podium at the 2024 Club Crews World Championships.</h2>
+      </div>
+       <div class="masonry-item">
+        <img src="sports/tifbrf_2024.png" alt="">
+        <h2>Team photo at the 2024 Toronto Island International Dragon Boat Festival.</h2>
+      </div>
+       <div class="masonry-item">
+        <img src="sports/oc.jpg" alt="Canadian Nationals">
+        <h2>Outrigger canoeing in Toronto, 2023.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/dw.jpg" alt="Dragon Warriors">
+        <h2>Joined SF Dragon Warriors during my 2025 summer internship in the Bay Area.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/oc6_2024.jpg" alt="">
+        <h2>Paddling at the 2024 OCRA Eastern Sprint Championships.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/pickering_2022.JPG" alt="Pickering Dragon Boat Festival">
+        <h2>First time dragon boat racing with Iron Dragons in 2022.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/morning_row.jpg" alt="">
+        <h2>Rowing camp 2025.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/practice_bike.JPG" alt="">
+        <h2>Biking back from practice, 2024.</h2>
+      </div>
+      <div class="masonry-item">
+        <img src="sports/nationals_2023.jpg" alt="">
+        <h2>Team photo at the 2023 Canadian Dragon Boat Nationals.</h2>
+      </div>
+      
+      
+    </div>
+  </div>
+</body>
+</html>

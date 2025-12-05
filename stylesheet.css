@@ -1,0 +1,207 @@
+/* Load Lato (400/700 normal + italic) */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Base typography */
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f09228;
+}
+
+/* Headings / text overrides */
+h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.papertitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.name {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 32px;
+}
+
+/* Image hover containers */
+.one,
+.two {
+  width: 160px;
+  height: 160px;
+}
+
+.one {
+  position: relative;
+}
+
+.two {
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+}
+
+/* Highlight */
+span.highlight {
+  background-color: #ffffd0;
+}
+
+/* Colored box utility */
+.colored-box {
+  color: black;
+  padding: 20px;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.news-box {
+  max-height: 150px;   /* adjust to your preferred window size */
+  overflow-y: auto;
+  padding-right: 10px; /* prevents text from touching the scrollbar */
+}
+
+.news-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+.news-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+/* For photos*/
+/* Horizontal scroll container */
+.album-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 16px;
+  padding: 16px 0;
+  scroll-behavior: smooth;
+}
+
+.album-container::-webkit-scrollbar {
+  height: 8px;
+}
+.album-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+}
+
+.album {
+  flex: 0 0 auto;
+  min-width: 250px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.album img {
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.album h2 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: normal;
+}
+
+/* Buttons for selecting albums (like links) */
+.album-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.album-buttons button {
+  padding: 6px 12px;
+  border: none; /* remove button border */
+  background: none; /* transparent background */
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #1772d0; /* normal text color */
+  text-decoration: underline; /* looks like a link */
+}
+
+.album-buttons button:hover {
+  color: #f09228; /* text color changes on hover */
+}
+
+/* Hide other albums by default */
+.album-group {
+  display: none;
+}
+.album-group.active {
+  display: flex;
+}
+
+/* For water sports */
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* Each photo card */
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #f9f9f9;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.grid-item p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Back link */
+.back-link {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  color: #1772d0;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 20px;
+  display: inline-block;
+}
+
+.back-link:hover {
+  color: #f09228;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
